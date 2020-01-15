@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import api from '../../services/api';
+import {Link} from 'react-router-dom';
 import './styles.css';
 
 export default class Main extends Component {
@@ -45,7 +46,9 @@ export default class Main extends Component {
         return (
             <div className="texts-list">
                 {this.state.texts.map(text => (
-                    <div key={text?.id}>{text?.text}</div>
+                    <div key={text?.id}>
+                        <Link to={`/text/${text?.id}`}>{text?.text}</Link>
+                    </div>
                 ))}
                 <div className="actions">
                     <button disabled={page === 1} onClick={this.prevPage}>Anterior</button>
