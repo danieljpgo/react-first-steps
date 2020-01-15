@@ -1,0 +1,7 @@
+header#main-header{
+    background: gray;
+    height: 46px;
+    color: #FFF;
+    display: grid;
+    place-items: center;
+}
