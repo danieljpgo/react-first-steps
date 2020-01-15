@@ -1,7 +1,8 @@
 header#main-header{
-    background: gray;
+    background: #61dafb;
     height: 46px;
     color: #FFF;
     display: grid;
     place-items: center;
+    font-weight: bold;
 }
